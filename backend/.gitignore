@@ -1,0 +1,4 @@
+target/
+!.mvn/wrapper/maven-wrapper2.jar
+!**/src/main/**
+!**/src/test/**
