@@ -11,50 +11,22 @@ Realization of a modern social network with various experimental features.
 - DevTools
 
 ### Frontend
-#### WEB
 - NodeJS
 - ReactJS or Angular ??
 - Webpack
 - HTML/CSS/JS
 
-#### Android
-- Kotlin
-- Android SDK 21
-
-#### IOS
-- Swift
-
-#### Desktop
-- Java FX
-
 ## Run apps
-### Server
+#### Backend
 ```
 $ cd backend
 $ mvn spring-boot:run
 ```
 
-### Clients
-
-#### WEB
+#### Frontend
 ```
-$ cd frontend/web
+$ cd frontend
 $ yarn start
-```
-
-#### Android
-```
-$
-```
-
-#### IOS
-```
-$
-```
-
-#### Desktop
-```
-$
 ```
 
 ## Contribute
