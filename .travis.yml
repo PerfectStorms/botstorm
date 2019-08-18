@@ -1,0 +1,6 @@
+language: java
+install: true
+
+script:
+  - cd backend && ./mvnw package && cd ..
+  - cd frontend && cd ..
