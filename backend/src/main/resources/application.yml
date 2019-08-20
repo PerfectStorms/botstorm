@@ -1,2 +1,18 @@
 server:
   port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/society
+    username: root
+    password: root
+    platform: POSTGRESQL
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
