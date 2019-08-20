@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.perfectstorms</groupId>
-    <artifactId>society</artifactId>
+    <groupId>org.perfectstorms.society</groupId>
+    <artifactId>backend</artifactId>
     <version>0.0.01-SNAPSHOT</version>
 
     <properties>
