@@ -1,22 +1,9 @@
 # society
 Realization of a modern social network with various experimental features.
 
-## Technologies
-### Backend
-- Spring Boot 2.1.5
-- Spring Data JPA 2.1.5
-- Spring Security 2.1.5
-- MySQL 8.0.15
-- Lombok
-- DevTools
+[![Build Status](https://travis-ci.com/perfectstorms/society.svg?branch=master)](https://travis-ci.com/perfectstorms/society)
 
-### Frontend
-- NodeJS
-- ReactJS or Angular ??
-- Webpack
-- HTML/CSS/JS
-
-## Run apps
+## Run
 #### Backend
 ```
 $ cd backend
@@ -28,6 +15,21 @@ $ mvn spring-boot:run
 $ cd frontend
 $ yarn start
 ```
+
+## Technologies
+#### Backend
+- Spring Boot 2.1.5
+- Spring Data JPA 2.1.5
+- Spring Security 2.1.5
+- MySQL 8.0.15
+- Lombok
+- DevTools
+
+#### Frontend
+- NodeJS
+- Angular
+- Webpack
+- HTML/CSS/JS
 
 ## Contribute
 For any problems, comments, or feedback please create an issue 
