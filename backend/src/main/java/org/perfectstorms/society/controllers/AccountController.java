@@ -41,4 +41,8 @@ public class AccountController {
         accountRepository.deleteById(id);
         return new ResponseEntity(HttpStatus.OK);
     }
+    @GetMapping(value = "/user/{id}")
+    public Optional<Account> getOneById(@PathVariable Long id) {
+        return accountRepository.findById(id);
+    }
 }
