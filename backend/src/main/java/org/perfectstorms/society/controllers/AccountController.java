@@ -36,7 +36,7 @@ public class AccountController {
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
-    @RequestMapping(value = "/accounts", method = RequestMethod.DELETE)
+    @DeleteMapping(value = "/accounts")
     public ResponseEntity deleteAccountById(Long id) {
         accountRepository.deleteById(id);
         return new ResponseEntity(HttpStatus.OK);
