@@ -11,7 +11,7 @@ public class User {
     private long id;
 
     @Column(name = "accountId")
-    private String user_accountId;
+    private long user_accountId;
 
     @Column(name = "firstName")
     private String user_firstName;
@@ -52,6 +52,12 @@ public class User {
     @Column(name = "anotherLang")
     private String user_languages;
 
+    @Column(name = "authorLogin")
+    private String bot_authorAccountLogin;
+
+    @Column(name = "authorUrl")
+    private String bot_authorAccountUrl;
+
     @Column(name = "onlineStatus")
     private String user_onlineStatus;
 
@@ -61,7 +67,7 @@ public class User {
     public User() {
     }
 
-    public User(String user_accountId, String user_firstName, String user_lastName, String user_status, String user_avatarUrl, String user_about, String user_country, String user_region, String user_city, String user_street_name, String user_street_number, String user_apartment_number, String user_main_language, String user_languages, String user_onlineStatus, String user_registrationData) {
+    public User(long user_accountId, String user_firstName, String user_lastName, String user_status, String user_avatarUrl, String user_about, String user_country, String user_region, String user_city, String user_street_name, String user_street_number, String user_apartment_number, String user_main_language, String user_languages, String bot_authorAccountLogin, String bot_authorAccountUrl, String user_onlineStatus, String user_registrationData) {
         this.user_accountId = user_accountId;
         this.user_firstName = user_firstName;
         this.user_lastName = user_lastName;
@@ -76,6 +82,8 @@ public class User {
         this.user_apartment_number = user_apartment_number;
         this.user_main_language = user_main_language;
         this.user_languages = user_languages;
+        this.bot_authorAccountLogin = bot_authorAccountLogin;
+        this.bot_authorAccountUrl = bot_authorAccountUrl;
         this.user_onlineStatus = user_onlineStatus;
         this.user_registrationData = user_registrationData;
     }
@@ -88,11 +96,11 @@ public class User {
         this.id = id;
     }
 
-    public String getUser_accountId() {
+    public long getUser_accountId() {
         return user_accountId;
     }
 
-    public void setUser_accountId(String user_accountId) {
+    public void setUser_accountId(long user_accountId) {
         this.user_accountId = user_accountId;
     }
 
@@ -198,6 +206,22 @@ public class User {
 
     public void setUser_languages(String user_languages) {
         this.user_languages = user_languages;
+    }
+
+    public String getBot_authorAccountLogin() {
+        return bot_authorAccountLogin;
+    }
+
+    public void setBot_authorAccountLogin(String bot_authorAccountLogin) {
+        this.bot_authorAccountLogin = bot_authorAccountLogin;
+    }
+
+    public String getBot_authorAccountUrl() {
+        return bot_authorAccountUrl;
+    }
+
+    public void setBot_authorAccountUrl(String bot_authorAccountUrl) {
+        this.bot_authorAccountUrl = bot_authorAccountUrl;
     }
 
     public String getUser_onlineStatus() {
