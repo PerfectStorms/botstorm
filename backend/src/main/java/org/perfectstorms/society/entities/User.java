@@ -38,16 +38,16 @@ public class User {
     private String user_city;
 
     @Column(name = "streetName")
-    private String user_street_name;
+    private String user_streetName;
 
     @Column(name = "streetNum")
-    private String user_street_number;
+    private String user_streetNumber;
 
     @Column(name = "apartmentNum")
-    private String user_apartment_number;
+    private String user_apartmentNumber;
 
     @Column(name = "mainLanguage")
-    private String user_main_language;
+    private String user_mainLanguage;
 
     @Column(name = "anotherLang")
     private String user_languages;
@@ -67,7 +67,7 @@ public class User {
     public User() {
     }
 
-    public User(long user_accountId, String user_firstName, String user_lastName, String user_status, String user_avatarUrl, String user_about, String user_country, String user_region, String user_city, String user_street_name, String user_street_number, String user_apartment_number, String user_main_language, String user_languages, String bot_authorAccountLogin, String bot_authorAccountUrl, String user_onlineStatus, String user_registrationData) {
+    public User(long user_accountId, String user_firstName, String user_lastName, String user_status, String user_avatarUrl, String user_about, String user_country, String user_region, String user_city, String user_streetName, String user_streetNumber, String user_apartmentNumber, String user_mainLanguage, String user_languages, String bot_authorAccountLogin, String bot_authorAccountUrl, String user_onlineStatus, String user_registrationData) {
         this.user_accountId = user_accountId;
         this.user_firstName = user_firstName;
         this.user_lastName = user_lastName;
@@ -77,10 +77,10 @@ public class User {
         this.user_country = user_country;
         this.user_region = user_region;
         this.user_city = user_city;
-        this.user_street_name = user_street_name;
-        this.user_street_number = user_street_number;
-        this.user_apartment_number = user_apartment_number;
-        this.user_main_language = user_main_language;
+        this.user_streetName = user_streetName;
+        this.user_streetNumber = user_streetNumber;
+        this.user_apartmentNumber = user_apartmentNumber;
+        this.user_mainLanguage = user_mainLanguage;
         this.user_languages = user_languages;
         this.bot_authorAccountLogin = bot_authorAccountLogin;
         this.bot_authorAccountUrl = bot_authorAccountUrl;
@@ -168,36 +168,36 @@ public class User {
         this.user_city = user_city;
     }
 
-    public String getUser_street_name() {
-        return user_street_name;
+    public String getUser_streetName() {
+        return user_streetName;
     }
 
-    public void setUser_street_name(String user_street_name) {
-        this.user_street_name = user_street_name;
+    public void setUser_streetName(String user_streetName) {
+        this.user_streetName = user_streetName;
     }
 
-    public String getUser_street_number() {
-        return user_street_number;
+    public String getUser_streetNumber() {
+        return user_streetNumber;
     }
 
-    public void setUser_street_number(String user_street_number) {
-        this.user_street_number = user_street_number;
+    public void setUser_streetNumber(String user_streetNumber) {
+        this.user_streetNumber = user_streetNumber;
     }
 
-    public String getUser_apartment_number() {
-        return user_apartment_number;
+    public String getUser_apartmentNumber() {
+        return user_apartmentNumber;
     }
 
-    public void setUser_apartment_number(String user_apartment_number) {
-        this.user_apartment_number = user_apartment_number;
+    public void setUser_apartmentNumber(String user_apartmentNumber) {
+        this.user_apartmentNumber = user_apartmentNumber;
     }
 
-    public String getUser_main_language() {
-        return user_main_language;
+    public String getUser_mainLanguage() {
+        return user_mainLanguage;
     }
 
-    public void setUser_main_language(String user_main_language) {
-        this.user_main_language = user_main_language;
+    public void setUser_mainLanguage(String user_mainLanguage) {
+        this.user_mainLanguage = user_mainLanguage;
     }
 
     public String getUser_languages() {
@@ -239,4 +239,5 @@ public class User {
     public void setUser_registrationData(String user_registrationData) {
         this.user_registrationData = user_registrationData;
     }
+
 }
