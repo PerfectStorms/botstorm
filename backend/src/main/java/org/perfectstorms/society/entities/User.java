@@ -11,81 +11,86 @@ public class User {
     private long id;
 
     @Column(name = "accountId")
-    private long user_accountId;
+    private long accountId;
 
     @Column(name = "firstName")
-    private String user_firstName;
+    private String firstName;
 
     @Column(name = "lastName")
-    private String user_lastName;
+    private String lastName;
 
     @Column(name = "status")
-    private String user_status;
+    private String status;
 
     @Column(name = "avatarUrl")
-    private String user_avatarUrl;
+    private String avatarUrl;
 
     @Column(name = "about")
-    private String user_about;
+    private String about;
 
     @Column(name = "country")
-    private String user_country;
+    private String country;
 
     @Column(name = "region")
-    private String user_region;
+    private String region;
 
     @Column(name = "city")
-    private String user_city;
+    private String city;
 
     @Column(name = "streetName")
-    private String user_streetName;
+    private String streetName;
 
     @Column(name = "streetNum")
-    private String user_streetNumber;
+    private String streetNumber;
 
     @Column(name = "apartmentNum")
-    private String user_apartmentNumber;
+    private String apartmentNumber;
 
     @Column(name = "mainLanguage")
-    private String user_mainLanguage;
+    private String mainLanguage;
 
     @Column(name = "anotherLang")
-    private String user_languages;
+    private String languages;
 
     @Column(name = "authorLogin")
-    private String bot_authorAccountLogin;
+    private String authorAccountLogin;
 
     @Column(name = "authorUrl")
-    private String bot_authorAccountUrl;
+    private String authorAccountUrl;
 
     @Column(name = "onlineStatus")
-    private String user_onlineStatus;
+    private String onlineStatus;
 
     @Column(name = "registrationData")
-    private String user_registrationData;
+    private String registrationData;
 
     public User() {
     }
 
-    public User(long user_accountId, String user_firstName, String user_lastName, String user_status, String user_avatarUrl, String user_about, String user_country, String user_region, String user_city, String user_streetName, String user_streetNumber, String user_apartmentNumber, String user_mainLanguage, String user_languages, String bot_authorAccountLogin, String bot_authorAccountUrl, String user_onlineStatus, String user_registrationData) {
-        this.user_accountId = user_accountId;
-        this.user_firstName = user_firstName;
-        this.user_lastName = user_lastName;
-        this.user_status = user_status;
-        this.user_avatarUrl = user_avatarUrl;
-        this.user_about = user_about;
-        this.user_country = user_country;
-        this.user_region = user_region;
-        this.user_city = user_city;
-        this.user_streetName = user_streetName;
-        this.user_streetNumber = user_streetNumber;
-        this.user_apartmentNumber = user_apartmentNumber;
-        this.user_mainLanguage = user_mainLanguage;
-        this.user_languages = user_languages;
-        this.bot_authorAccountLogin = bot_authorAccountLogin;
-        this.bot_authorAccountUrl = bot_authorAccountUrl;
-        this.user_onlineStatus = user_onlineStatus;
-        this.user_registrationData = user_registrationData;
+    public User(long accountId, String firstName, String lastName, String status,
+                String avatarUrl, String about, String country, String region,
+                String city, String streetName, String streetNumber, String apartmentNumber,
+                String mainLanguage, String languages, String authorAccountLogin,
+                String authorAccountUrl, String onlineStatus, String registrationData) {
+
+        this.accountId = accountId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.status = status;
+        this.avatarUrl = avatarUrl;
+        this.about = about;
+        this.country = country;
+        this.region = region;
+        this.city = city;
+        this.streetName = streetName;
+        this.streetNumber = streetNumber;
+        this.apartmentNumber = apartmentNumber;
+        this.mainLanguage = mainLanguage;
+        this.languages = languages;
+        this.authorAccountLogin = authorAccountLogin;
+        this.authorAccountUrl = authorAccountUrl;
+        this.onlineStatus = onlineStatus;
+        this.registrationData = registrationData;
     }
 
     public long getId() {
@@ -96,148 +101,147 @@ public class User {
         this.id = id;
     }
 
-    public long getUser_accountId() {
-        return user_accountId;
+    public long getAccountId() {
+        return accountId;
     }
 
-    public void setUser_accountId(long user_accountId) {
-        this.user_accountId = user_accountId;
+    public void setAccountId(long accountId) {
+        this.accountId = accountId;
     }
 
-    public String getUser_firstName() {
-        return user_firstName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setUser_firstName(String user_firstName) {
-        this.user_firstName = user_firstName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getUser_lastName() {
-        return user_lastName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setUser_lastName(String user_lastName) {
-        this.user_lastName = user_lastName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public String getUser_status() {
-        return user_status;
+    public String getStatus() {
+        return status;
     }
 
-    public void setUser_status(String user_status) {
-        this.user_status = user_status;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public String getUser_avatarUrl() {
-        return user_avatarUrl;
+    public String getAvatarUrl() {
+        return avatarUrl;
     }
 
-    public void setUser_avatarUrl(String user_avatarUrl) {
-        this.user_avatarUrl = user_avatarUrl;
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
     }
 
-    public String getUser_about() {
-        return user_about;
+    public String getAbout() {
+        return about;
     }
 
-    public void setUser_about(String user_about) {
-        this.user_about = user_about;
+    public void setAbout(String about) {
+        this.about = about;
     }
 
-    public String getUser_country() {
-        return user_country;
+    public String getCountry() {
+        return country;
     }
 
-    public void setUser_country(String user_country) {
-        this.user_country = user_country;
+    public void setCountry(String country) {
+        this.country = country;
     }
 
-    public String getUser_region() {
-        return user_region;
+    public String getRegion() {
+        return region;
     }
 
-    public void setUser_region(String user_region) {
-        this.user_region = user_region;
+    public void setRegion(String region) {
+        this.region = region;
     }
 
-    public String getUser_city() {
-        return user_city;
+    public String getCity() {
+        return city;
     }
 
-    public void setUser_city(String user_city) {
-        this.user_city = user_city;
+    public void setCity(String city) {
+        this.city = city;
     }
 
-    public String getUser_streetName() {
-        return user_streetName;
+    public String getStreetName() {
+        return streetName;
     }
 
-    public void setUser_streetName(String user_streetName) {
-        this.user_streetName = user_streetName;
+    public void setStreetName(String streetName) {
+        this.streetName = streetName;
     }
 
-    public String getUser_streetNumber() {
-        return user_streetNumber;
+    public String getStreetNumber() {
+        return streetNumber;
     }
 
-    public void setUser_streetNumber(String user_streetNumber) {
-        this.user_streetNumber = user_streetNumber;
+    public void setStreetNumber(String streetNumber) {
+        this.streetNumber = streetNumber;
     }
 
-    public String getUser_apartmentNumber() {
-        return user_apartmentNumber;
+    public String getApartmentNumber() {
+        return apartmentNumber;
     }
 
-    public void setUser_apartmentNumber(String user_apartmentNumber) {
-        this.user_apartmentNumber = user_apartmentNumber;
+    public void setApartmentNumber(String apartmentNumber) {
+        this.apartmentNumber = apartmentNumber;
     }
 
-    public String getUser_mainLanguage() {
-        return user_mainLanguage;
+    public String getMainLanguage() {
+        return mainLanguage;
     }
 
-    public void setUser_mainLanguage(String user_mainLanguage) {
-        this.user_mainLanguage = user_mainLanguage;
+    public void setMainLanguage(String mainLanguage) {
+        this.mainLanguage = mainLanguage;
     }
 
-    public String getUser_languages() {
-        return user_languages;
+    public String getLanguages() {
+        return languages;
     }
 
-    public void setUser_languages(String user_languages) {
-        this.user_languages = user_languages;
+    public void setLanguages(String languages) {
+        this.languages = languages;
     }
 
-    public String getBot_authorAccountLogin() {
-        return bot_authorAccountLogin;
+    public String getAuthorAccountLogin() {
+        return authorAccountLogin;
     }
 
-    public void setBot_authorAccountLogin(String bot_authorAccountLogin) {
-        this.bot_authorAccountLogin = bot_authorAccountLogin;
+    public void setAuthorAccountLogin(String authorAccountLogin) {
+        this.authorAccountLogin = authorAccountLogin;
     }
 
-    public String getBot_authorAccountUrl() {
-        return bot_authorAccountUrl;
+    public String getAuthorAccountUrl() {
+        return authorAccountUrl;
     }
 
-    public void setBot_authorAccountUrl(String bot_authorAccountUrl) {
-        this.bot_authorAccountUrl = bot_authorAccountUrl;
+    public void setAuthorAccountUrl(String authorAccountUrl) {
+        this.authorAccountUrl = authorAccountUrl;
     }
 
-    public String getUser_onlineStatus() {
-        return user_onlineStatus;
+    public String getOnlineStatus() {
+        return onlineStatus;
     }
 
-    public void setUser_onlineStatus(String user_onlineStatus) {
-        this.user_onlineStatus = user_onlineStatus;
+    public void setOnlineStatus(String onlineStatus) {
+        this.onlineStatus = onlineStatus;
     }
 
-    public String getUser_registrationData() {
-        return user_registrationData;
+    public String getRegistrationData() {
+        return registrationData;
     }
 
-    public void setUser_registrationData(String user_registrationData) {
-        this.user_registrationData = user_registrationData;
+    public void setRegistrationData(String registrationData) {
+        this.registrationData = registrationData;
     }
-
 }
