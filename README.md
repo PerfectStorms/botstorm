@@ -24,6 +24,7 @@ $ yarn start
 - MySQL 8.0.15
 - Lombok
 - DevTools
+- Maven
 
 #### Frontend
 - NodeJS
