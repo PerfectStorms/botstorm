@@ -5,6 +5,7 @@
     <groupId>org.perfectstorms.society</groupId>
     <artifactId>backend</artifactId>
     <version>0.0.01-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <properties>
         <java.version>1.8</java.version>
