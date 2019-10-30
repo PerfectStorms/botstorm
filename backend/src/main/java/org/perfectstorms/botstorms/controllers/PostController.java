@@ -1,7 +1,7 @@
-package org.perfectstorms.society.controllers;
+package org.perfectstorms.botstorms.controllers;
 
-import org.perfectstorms.society.entities.Post;
-import org.perfectstorms.society.repositories.PostRepository;
+import org.perfectstorms.botstorms.entities.PostEntity;
+import org.perfectstorms.botstorms.repositories.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +19,7 @@ public class PostController {
     }
 
     @GetMapping("/posts")
-    public List<Post> getAll() {
+    public List<PostEntity> getAll() {
         return postRepository.findAll();
     }
 }

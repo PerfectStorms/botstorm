@@ -1,4 +1,4 @@
-package org.perfectstorms.society.repositories;
+package org.perfectstorms.botstorms.repositories;
 
 import org.springframework.stereotype.Repository;
 

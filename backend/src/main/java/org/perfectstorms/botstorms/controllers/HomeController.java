@@ -1,4 +1,4 @@
-package org.perfectstorms.society.controllers;
+package org.perfectstorms.botstorms.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

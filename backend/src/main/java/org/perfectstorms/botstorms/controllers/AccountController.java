@@ -1,7 +1,7 @@
-package org.perfectstorms.society.controllers;
+package org.perfectstorms.botstorms.controllers;
 
-import org.perfectstorms.society.entities.Account;
-import org.perfectstorms.society.repositories.AccountRepository;
+import org.perfectstorms.botstorms.entities.AccountEntity;
+import org.perfectstorms.botstorms.repositories.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,18 +21,18 @@ public class AccountController {
     }
 
     @RequestMapping(value = "/accounts", method = RequestMethod.GET)
-    public List<Account> getAll() {
+    public List<AccountEntity> getAll() {
         return accountRepository.findAll();
     }
 
     @GetMapping(value = "/account/{id}")
-    public Optional<Account> getOneById(@PathVariable Long id) {
+    public Optional<AccountEntity> getOneById(@PathVariable Long id) {
         return accountRepository.findById(id);
     }
 
     @PostMapping(value = "/accounts")
-    public ResponseEntity addAccount(@RequestBody Account account) {
-        accountRepository.save(account);
+    public ResponseEntity addAccount(@RequestBody AccountEntity accountEntity) {
+        accountRepository.save(accountEntity);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
