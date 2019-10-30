@@ -1,10 +1,10 @@
-package org.perfectstorms.society.entities;
+package org.perfectstorms.botstorms.entities;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "bots")
-public class Bot {
+public class BotEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,12 +34,12 @@ public class Bot {
     @Column(name = "creationDate")
     private String creationDate;
 
-    public Bot() {
+    public BotEntity() {
     }
 
-    public Bot(long accountId, String name, String type, String avatarUrl,
-               String authorAccountLogin, String authorAccountUrl,
-               boolean activeStatus, String creationDate) {
+    public BotEntity(long accountId, String name, String type, String avatarUrl,
+                     String authorAccountLogin, String authorAccountUrl,
+                     boolean activeStatus, String creationDate) {
 
         this.accountId = accountId;
         this.name = name;

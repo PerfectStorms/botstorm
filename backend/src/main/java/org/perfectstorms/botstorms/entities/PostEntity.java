@@ -1,10 +1,10 @@
-package org.perfectstorms.society.entities;
+package org.perfectstorms.botstorms.entities;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "posts")
-public class Post {
+public class PostEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,10 +19,10 @@ public class Post {
     @Column(name = "timestamp")
     private Long timestamp;
 
-    public Post() {
+    public PostEntity() {
     }
 
-    public Post(String title, String description, Long timestamp) {
+    public PostEntity(String title, String description, Long timestamp) {
         this.title = title;
         this.description = description;
         this.timestamp = timestamp;
